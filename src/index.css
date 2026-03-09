@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+
+  font-family: "Sora", sans-serif;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+   /* stops vertical scroll */
+   height:100%;
+    
+
+  overflow-x: hidden;   /* optional: stops horizontal scroll */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
