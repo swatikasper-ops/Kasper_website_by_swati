@@ -1,16 +1,24 @@
 import React from 'react'
 
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Footer from './components/Footer';
+import Main_Solutions from './pages/Solutions/Main_Solution';
+
+
+
+
+
+
 
 const App = () => {
   return (
     <>
-      
-      <Hero />
-      <Features />
-      <Footer />
+ 
+
+    <Main_Solutions/>
+
+
+{ /*<Main_Services/> */}
+
+     
     </>
   )
 }

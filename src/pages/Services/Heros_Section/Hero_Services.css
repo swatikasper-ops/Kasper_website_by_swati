@@ -1,0 +1,146 @@
+.hero {
+  width: 100%;
+  height: 926px;
+  margin-top: 71px;
+  position: relative;
+
+  background-image: url("/src/assets/images/Service_Dasboard.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* overlay */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+/* container */
+
+.hero-inner {
+  position: relative;
+
+  width: 935px;
+  margin-top: 118px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  text-align: center;
+}
+
+/* heading */
+
+.hero-heading h1{
+  width: 100%;
+
+
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: white;
+}
+
+/* paragraph */
+
+.hero_Paragraph{
+  width: 100%;
+
+}
+
+.hero_Paragraph p{
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 2%;
+  color: white;
+  font-weight: 400;
+}
+
+/* button */
+
+.hero-actions{
+  margin-top: 5px;
+}
+
+.btn-outline{
+  width: 133px;
+  height: 40px;
+  background: rgba(250,64,40,1);
+  
+  color: white;
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.btn-outline:hover{
+  background:#aa1f07;
+}
+
+/* ---------- Responsive ---------- */
+
+
+
+
+@media (max-width:1200px){
+
+.hero-inner{
+width:90%;
+}
+
+.hero-heading h1{
+font-size:40px;
+}
+
+}
+
+@media (max-width:768px){
+
+.hero{
+height:auto;
+padding-bottom:80px;
+}
+
+.hero-inner{
+margin-top:80px;
+}
+
+.hero-heading h1{
+font-size:30px;
+}
+
+.hero_Paragraph p{
+font-size:14px;
+}
+
+}
+
+@media (max-width:480px){
+
+.hero-heading h1{
+font-size:22px;
+}
+
+.hero_Paragraph p{
+font-size:13px;
+}
+
+.btn-outline{
+width:120px;
+height:38px;
+font-size:14px;
+}
+
+}
