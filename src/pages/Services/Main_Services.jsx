@@ -6,6 +6,7 @@ import Features from "./Features_Section/Features";
 import Visiblity from "./Visiblity_Features/Visiblity";
 import BlogCard from "../Services/Features_Section/Features_Blog/BlogCard"
 import Contact from "./Contact/Contact";
+import Integrated from "./Integrated_Bussiness/Integrated";
 
 
 
@@ -17,14 +18,18 @@ const Main_Services = () => {
 <Hero_Servicess/>
 
 <Features/>
+ <Integrated/>
 
 <Visiblity/>
 
 <BlogCard/>
 
 
+
+
 <Contact/>
 <Footer />
+
 
 
 

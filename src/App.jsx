@@ -1,6 +1,7 @@
 import React from 'react'
+import Main_Services from './pages/Services/Main_Services';
 
-import Main_Solutions from './pages/Solutions/Main_Solution';
+// import Main_Solutions from './pages/Solutions/Main_Solution';
 
 
 
@@ -13,10 +14,11 @@ const App = () => {
     <>
  
 
-    <Main_Solutions/>
+    {/* <Main_Solutions/> */}
+
+    <Main_Services/>
 
 
-{ /*<Main_Services/> */}
 
      
     </>

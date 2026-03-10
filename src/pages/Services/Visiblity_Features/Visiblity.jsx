@@ -13,15 +13,15 @@ const Visiblity= () => {
         <div className="visibility-container">
           <div className="visibility-text">
             <h2>
-              Our IMS gives you real-time visibility into
+              Advanced Business Intelligence and 
               <br />
-              Stock, Sales, and Purchases.
+            Decision Support Capabilities.
             </h2>
           </div>
 
           <div className="why-left">
             <div className="why-image-wrapper">
-              <img src={Blog2} alt="choose" />
+             
             </div>
           </div>
         </div>

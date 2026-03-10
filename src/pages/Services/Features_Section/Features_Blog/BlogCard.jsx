@@ -40,7 +40,7 @@ const BlogCard = () => {
       {
         id: 4,
         image: Card4,
-        tag: "iMS",
+        tag: "IMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
         author: "Aditi Singh"
@@ -62,9 +62,10 @@ const BlogCard = () => {
 
 
   return (
+    
     <div className="Blog-main-div">
 
-      <p className="blog-heading">Insights & Blogs</p>
+      <p className="blog-heading">Latest Blogs</p>
 <div className="slider-wrapper">
 
 
