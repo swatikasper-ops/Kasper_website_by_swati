@@ -1,0 +1,270 @@
+.services-popup{
+  max-width:1342px;
+  width:100%;
+  min-height:636px;
+  margin:auto;
+  padding:39px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+  background:white;
+  font-family:"Sora",sans-serif;
+}
+
+
+/* -------- Container 1 -------- */
+
+.popup-top{
+  width:100%;
+  max-width:801px;
+  min-height:255px;
+  display:flex;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
+
+/* Image */
+
+.popup-image{
+  width:425px;
+  max-width:100%;
+  height:auto;
+}
+
+.popup-image img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+
+
+/* Services list */
+
+.popup-services{
+  width:316px;
+  max-width:100%;
+}
+
+.popup-services h2{
+  font-size:20px;
+  font-weight:400;
+  margin-bottom:16px;
+  color:rgba(0,6,61,1);
+}
+
+
+/* vertical line */
+
+.line{
+  border-left:2px solid ;
+  padding-left:16px;
+}
+
+
+/* links */
+
+.services-links{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.services-links a{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  text-decoration:none;
+  font-size:16px;
+  color:rgba(0,6,61,1);
+}
+
+.services-links a:hover{
+  color:#2563EB;
+}
+
+
+
+/* -------- Container 2 -------- */
+
+.popup-cards{
+  width:100%;
+  max-width:1342px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+  border-top:2px solid #E5E5E5;
+  padding-top:30px;
+}
+
+
+/* cards */
+
+.popup-card h3{
+  font-size:20px;
+  font-weight:400;
+  color:rgba(0,6,61,1);
+  padding-bottom: 2px
+}
+
+.popup-card p{
+  font-size:14px;
+  color:rgba(0,6,61,0.5);
+  margin:10px 0;
+}
+
+
+/* card links */
+
+.card-links{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.card-links a{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  text-decoration:none;
+  font-size:16px;
+  color:rgba(0,6,61,1);
+}
+
+.card-links a:hover{
+  color:#2563EB;
+}
+
+
+/* ---------------- TABLET FIX ---------------- */
+
+@media (max-width:1024px){
+
+
+.popup-top{
+  max-width:100%;
+  gap:20px;
+  
+
+}
+
+.popup-image{
+  width:280px;
+}
+
+.popup-services{
+  width:100%;
+}
+
+.popup-card h3{
+  font-size:18px;
+}
+
+.popup-card p{
+  font-size:13px;
+  line-height:1.5;
+}
+
+.card-links a{
+  font-size:14px;
+}
+
+}
+
+
+
+/* ---------------- MOBILE FIX ---------------- */
+
+@media (max-width:768px){
+
+.services-popup{
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+/* top section column */
+
+.popup-top{
+  flex-direction:column;
+  max-width:100%;
+  gap:20px;
+}
+
+/* image responsive */
+
+.popup-image{
+  width:100%;
+  max-width:240px;
+}
+
+.popup-image img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+
+/* services full width */
+
+.popup-services{
+  width:100%;
+}
+
+/* text sizes */
+
+.popup-services h2{
+  font-size:18px;
+}
+
+.services-links a{
+  font-size:13px;
+}
+
+/* cards layout */
+
+.popup-cards{
+  grid-template-columns:1fr;
+}
+
+/* cards text */
+
+.popup-card h3{
+  font-size:16px;
+}
+
+.popup-card p{
+  font-size:12px;
+  line-height:1.6;
+}
+
+.card-links a{
+  font-size:13px;
+}
+
+}
+
+
+
+/* ---------------- SMALL MOBILE ---------------- */
+
+@media (max-width:480px){
+
+.popup-image{
+  max-width:180px;
+}
+
+.popup-card h3{
+  font-size:15px;
+}
+
+.popup-card p{
+  font-size:11px;
+  width: 100%;
+
+}
+
+.services-links a,
+.card-links a{
+  font-size:12px;
+}
+
+}

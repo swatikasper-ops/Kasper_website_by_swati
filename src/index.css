@@ -21,3 +21,11 @@ html, body {
 body::-webkit-scrollbar {
   display: none;
 }
+@font-face {
+  font-family: 'Sora';
+  src: url('/fonts/sora.woff2') format('woff2');
+}
+
+body{
+  font-family: 'Sora', sans-serif;
+}
