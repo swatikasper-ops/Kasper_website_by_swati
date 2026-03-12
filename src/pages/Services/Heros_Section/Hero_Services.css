@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  min-height: 100vh; /* Use min-height instead of fixed height for smaller screens */
+  min-height: 100vh;
   position: relative;
 
   background-image: url("/src/assets/images/Service_Dasboard.jpg");
@@ -72,14 +72,15 @@
   margin-top: 18px;
 }
 
+/* ARROW */
 
 .Go_Arrow{
 cursor:pointer;
-font-size:32px;
+font-size:60px;
 display:flex;
 justify-content:center;
 align-items:center;
-margin-top:200px;
+margin-top:550px;
 animation: bounce 2s infinite;
 color: white;
 font-weight: 500;
@@ -104,11 +105,9 @@ font-weight: 500;
   transition: 0.3s;
 }
 
-
-
 /* ---------- Responsive ---------- */
 
-/* Large screens (laptops) */
+/* Large screens */
 @media (max-width:1200px){
   .hero-inner{
     width: 95%;
@@ -120,6 +119,11 @@ font-weight: 500;
 
   .hero_Paragraph p{
     font-size: 15px;
+  }
+
+  .Go_Arrow{
+    font-size:52px;
+    margin-top:420px;
   }
 }
 
@@ -141,6 +145,11 @@ font-weight: 500;
     width: 120px;
     height: 36px;
     font-size: 14px;
+  }
+
+  .Go_Arrow{
+    font-size:46px;
+    margin-top:360px;
   }
 }
 
@@ -170,6 +179,11 @@ font-weight: 500;
     height: 36px;
     font-size: 13px;
   }
+
+  .Go_Arrow{
+    font-size:40px;
+    margin-top:260px;
+  }
 }
 
 /* Small mobile */
@@ -187,5 +201,10 @@ font-weight: 500;
     width: 90px;
     height: 32px;
     font-size: 12px;
+  }
+
+  .Go_Arrow{
+    font-size:34px;
+    margin-top:200px;
   }
 }
