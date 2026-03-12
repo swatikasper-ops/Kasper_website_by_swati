@@ -27,11 +27,11 @@ color:rgba(0,6,61,1);
 /* BLOG GRID */
 
 .blog-scroll{
-display:grid;
-grid-template-columns:repeat(4,1fr); /* 4 cards in one row */
+display: flex;
+flex-wrap: wrap;
 gap:50px;
 width:100%;
-justify-items:center;
+justify-content: center;
 }
 
 /* BLOG CARD */
