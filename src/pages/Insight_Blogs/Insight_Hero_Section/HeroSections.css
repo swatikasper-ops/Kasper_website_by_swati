@@ -28,6 +28,7 @@ font-weight:600;
 font-size:48px;
 line-height:135%;
 color:rgba(27,18,112,1);
+padding-top: 75px;
 
 
 }
@@ -42,6 +43,7 @@ opacity:0.9;
 font-weight:400;
 line-height:120%;
 margin-top: -10px;
+padding-top: 20px;
 }
 
 /* BUTTONS */
@@ -50,7 +52,8 @@ margin-top: -10px;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:24px;
+gap:15px;
+padding-top: 20px;
 }
 
 .hero-buttons button{
@@ -107,7 +110,8 @@ background:#e6f7ff;
 color:#006e87;
 padding:4px 10px;
 font-size:13px;
-width:max-content;
+width: 35px;
+
 }
 
 /* TITLE */

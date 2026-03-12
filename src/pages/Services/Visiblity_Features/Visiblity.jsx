@@ -1,8 +1,6 @@
 import React from "react";
 import "./Visiblity.css";
 
-import Blog2 from "../../../assets/images/smile-ball.svg";
-
 
 const Visiblity= () => {
   return (
