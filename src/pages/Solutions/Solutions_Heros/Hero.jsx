@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import dashboard from "../../../assets/images/Dashboard.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -28,16 +29,37 @@ const Hero = () => {
           a single dashboard.
         </p>
 
-        {/* Buttons */}
         <div className="hero-actions">
-          <button className="btn-outline">
-            <span className="btn-content">Try Demo</span>
-          </button>
-          <button className="btn-primary">
-            <span className="btn-content">Contact Us</span>
-          </button>
-        </div>
 
+  <button
+    className="btn-outline"
+    onClick={() => {
+      const section = document.getElementById("demo");
+      const yOffset = -80; // adjust if you have navbar
+      const y =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }}
+  >
+    <span className="btn-content">Try Demo</span>
+  </button>
+
+  <button
+    className="btn-primary"
+    onClick={() => {
+      const section = document.getElementById("contact");
+      const yOffset = -80; // adjust if needed
+      const y =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }}
+  >
+    <span className="btn-content">Contact Us</span>
+  </button>
+
+</div>
         {/* Floating Dashboard */}
         <div className="hero-dashboard">
           <img src={dashboard} alt="Inventory Dashboard" />

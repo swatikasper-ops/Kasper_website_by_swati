@@ -6,6 +6,8 @@ import "./Features.css";
 import iMAGE from "../../../../assets/images/iMAGE.svg";
 
 
+import ball from "../../../../assets/images/ball.svg";
+
 
 
 
@@ -139,20 +141,22 @@ const Features = () => {
         </div>
       </section>
 
-      {/* ================= VISIBILITY ================= */}
+     {/* ================= VISIBILITY ================= */}
       <section className="visibility">
         <div className="visibility-container">
           <div className="visibility-text">
             <h2>
-              Our IMS gives you real-time visibility into
-              <br />
-              Stock, Sales, and Purchases.
+             Our IMS gives you real-time visibility 
+              <br />into Stock, Sales, and Purchases.
             </h2>
           </div>
 
           <div className="why-left">
             <div className="why-image-wrapper">
-            
+
+              <img src={ball}>
+              </img>
+             
             </div>
           </div>
         </div>
@@ -239,7 +243,7 @@ const Features = () => {
           <div className="faq-item">
             <div className="faq-question">
               <p>Q5. Is it suitable for small businesses?</p>
-              <span className="faq-arrow max-w-[100px] bg-red-900">
+              <span className="faq-arrow ">
                 {" "}
                 <IoIosArrowDown />
               </span>
@@ -316,88 +320,7 @@ const Features = () => {
           </div>
         </div>
       </section>
-      {/* ================= CONTACT ================= */}
-      <section className="contact">
-        <div className="contact-left">
-          <h2>Get in Touch.</h2>
-          <p>
-            Your business matters to us. Contact our team anytime for support,
-            demos, or partnerships..
-          </p>
-
-          <form>
-            {/* Full Name */}
-            <div className="form-group">
-              <label>
-                Full Name<span>*</span>
-              </label>
-              <div className="input-with-icon">
-                <FaUser className="input-icon" />
-
-                <input type="text" placeholder="Enter Full Name" />
-              </div>
-            </div>
-
-            {/* Email + Phone Row */}
-            <div className="form-row">
-              <div className="form-group">
-                <label>
-                  Email Id<span>*</span>
-                </label>
-                <div className="input-with-icon">
-                  <FaEnvelope className="input-icon" />
-                  <input type="email" placeholder="Enter Email Id" />
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label>
-                  Phone No.<span>*</span>
-                </label>
-
-                <div className="phone-input">
-                  <img src={flag} className="flag" alt="flag" />
-
-                  <span className="code">+91</span>
-
-                  <span className="divider">|</span>
-
-                  <input type="text" placeholder="Enter Phone No." />
-                </div>
-              </div>
-            </div>
-
-            {/* Product */}
-
-            <div className="form-group">
-              <label>Product</label>
-
-              <div className="select-wrapper">
-                <select>
-                  <option>Select Product</option>
-                  <option>Product 1</option>
-                  <option>Product 2</option>
-                  <option>Product 3</option>
-                </select>
-              </div>
-            </div>
-
-            {/* Message */}
-            <div className="form-group full">
-              <label>Message</label>
-              <textarea placeholder="How we can help you ?"></textarea>
-            </div>
-
-            <button type="submit" className="submit-btn">
-              Submit
-            </button>
-          </form>
-        </div>
-
-        <div className="contact-right">
-          <img src={img} alt="contact" />
-        </div>
-      </section>
+     
     </>
   );
 };
