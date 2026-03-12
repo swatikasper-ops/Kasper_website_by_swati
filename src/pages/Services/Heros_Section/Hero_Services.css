@@ -1,7 +1,6 @@
 .hero {
   width: 100%;
-  height: 100vh;
-
+  min-height: 100vh; /* Use min-height instead of fixed height for smaller screens */
   position: relative;
 
   background-image: url("/src/assets/images/Service_Dasboard.jpg");
@@ -26,31 +25,27 @@
 
 .hero-inner {
   position: relative;
-
   max-width: 1200px;
   width: 90%;
   margin-top: 130px;
 
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
 }
 
 /* heading */
 
 .hero-heading h1{
-  max-width: 1074px;
-  width: 1074;
-  padding-top: 60PX;
-  max-height: 926px;
+  max-width: 100%;
+  width: 100%;
+  padding-top: 60px;
 
   font-family: "Sora", sans-serif;
   font-weight: 600;
   font-size: 48px;
-  line-height: 120%;
+  line-height: 1.2;
   color: white;
 }
 
@@ -65,8 +60,8 @@
 .hero_Paragraph p{
   font-family: "Sora", sans-serif;
   font-size: 16px;
-  line-height: 130%;
-  letter-spacing: 2%;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
   color: white;
   font-weight: 400;
 }
@@ -81,69 +76,100 @@
   width: 133px;
   height: 40px;
   background: rgba(250,64,40,1);
-  
   color: white;
   font-family: "Sora", sans-serif;
   font-size: 16px;
   cursor: pointer;
   font-weight: 400;
   border: none;
+  border-radius: 4px;
+  transition: 0.3s;
 }
 
 .btn-outline:hover{
-  background:rgb(155, 6, 6);
+  background: rgb(155, 6, 6);
 }
 
 /* ---------- Responsive ---------- */
 
+/* Large screens (laptops) */
 @media (max-width:1200px){
+  .hero-inner{
+    width: 95%;
+  }
 
-.hero-inner{
-width:100%;
-height: 100%;
+  .hero-heading h1{
+    font-size: 40px;
+  }
+
+  .hero_Paragraph p{
+    font-size: 15px;
+  }
 }
 
-.hero-heading h1{
-font-size:40px;
+/* Tablets */
+@media (max-width:992px){
+  .hero-inner{
+    margin-top: 100px;
+  }
+
+  .hero-heading h1{
+    font-size: 34px;
+  }
+
+  .hero_Paragraph p{
+    font-size: 14px;
+  }
+
+  .btn-outline{
+    width: 120px;
+    height: 36px;
+    font-size: 14px;
+  }
 }
 
-}
-
+/* Mobile */
 @media (max-width:768px){
+  .hero{
+    min-height: auto;
+    padding: 80px 20px;
+    align-items: center;
+  }
 
-.hero{
-height:auto;
-padding-bottom:80px;
+  .hero-inner{
+    margin-top: 60px;
+  }
+
+  .hero-heading h1{
+    font-size: 28px;
+    padding-top: 40px;
+  }
+
+  .hero_Paragraph p{
+    font-size: 13px;
+  }
+
+  .btn-outline{
+    width: 110px;
+    height: 36px;
+    font-size: 13px;
+  }
 }
 
-.hero-inner{
-margin-top:80px;
-}
-
-.hero-heading h1{
-font-size:30px;
-}
-
-.hero_Paragraph p{
-font-size:14px;
-}
-
-}
-
+/* Small mobile */
 @media (max-width:480px){
+  .hero-heading h1{
+    font-size: 22px;
+    padding-top: 30px;
+  }
 
-.hero-heading h1{
-font-size:22px;
-}
+  .hero_Paragraph p{
+    font-size: 12px;
+  }
 
-.hero_Paragraph p{
-font-size:13px;
-}
-
-.btn-outline{
-width:120px;
-height:38px;
-font-size:14px;
-}
-
+  .btn-outline{
+    width: 90px;
+    height: 32px;
+    font-size: 12px;
+  }
 }

@@ -18,12 +18,12 @@ const Visiblity= () => {
             Decision Support Capabilities.
             </h2>
           </div>
-
+{/* 
           <div className="why-left">
             <div className="why-image-wrapper">
              
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

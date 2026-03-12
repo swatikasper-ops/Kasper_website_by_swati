@@ -1,13 +1,26 @@
+/* ================= GLOBAL ================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Sora",sans-serif;
+}
+
+section{
+width:100%;
+}
+
+/* ================= FEATURES SECTION ================= */
+
 .Industries-main-div{
 max-width:1440px;
 width:100%;
-margin:60px auto;
-padding:50px 50px;
+margin:20px auto;
+padding:40px 50px;
 gap:24px;
 }
 
 .Industries-main-div p{
-font-family:Sora;
 font-weight:400;
 font-size:20px;
 color:rgba(0,6,61,1);
@@ -44,19 +57,18 @@ width:250px;
 height:150px;
 transition:transform 0.4s ease;
 border-radius:4px;
+object-fit:cover;
 }
 
 /* TEXT */
 
 .industry-card p{
 position:absolute;
-font-family:Sora;
 font-weight:400;
-font-size:16px;
+font-size:15px;
 top:128px;
 left:13px;
 z-index:4;
-white-space:nowrap;
 color:#fff;
 line-height:100%;
 }
@@ -71,6 +83,7 @@ bottom:0;
 width:100%;
 height:60px;
 border-radius:4px;
+background:linear-gradient(to top, rgba(0,0,0,0.6), transparent);
 }
 
 /* HOVER */
@@ -83,17 +96,22 @@ transform:scale(1.4);
 
 @media (max-width:1024px){
 
-.Industries-main-div{
-padding:40px 20px;
+.why-container{
+  grid-template-columns:1fr;
+  gap:60px;
+  text-align:center;
 }
 
-.industry-imagediv{
-gap:30px;
+/* right content smaller */
+
+.why-right{
+  max-width:520px;
+  margin:auto;
+  padding:0 40px;
 }
 
-.industry-card img{
-width:220px;
-height:140px;
+.why-feature{
+  gap:14px;
 }
 
 }
@@ -102,21 +120,30 @@ height:140px;
 
 @media (max-width:768px){
 
-.Industries-main-div{
-padding:35px 15px;
+.why-choose{
+  padding:35px 20px;
 }
 
-.Industries-main-div p{
-font-size:18px;
+.why-main-heading{
+  font-size:18px;
+  margin-bottom:35px;
 }
 
-.industry-imagediv{
-gap:20px;
+/* right section smaller */
+
+.why-right{
+  max-width:420px;
+  margin:auto;
+  padding:0 25px;
+  gap:14px;
 }
 
-.industry-card img{
-width:200px;
-height:130px;
+.why-feature h4{
+  font-size:16px;
+}
+
+.why-feature p{
+  font-size:14px;
 }
 
 }
@@ -125,22 +152,29 @@ height:130px;
 
 @media (max-width:480px){
 
-.Industries-main-div p{
-font-size:16px;
+.why-main-heading{
+  font-size:16px;
 }
 
-.industry-imagediv{
-gap:15px;
+/* more breathing space */
+
+.why-right{
+  max-width:360px;
+  padding:0 20px;
+  gap:12px;
 }
 
-.industry-card img{
-width:160px;
-height:110px;
+.why-feature img{
+  width:20px;
+  height:20px;
 }
 
-.industry-card p{
-font-size:14px;
-top:90px;
+.why-feature h4{
+  font-size:15px;
+}
+
+.why-feature p{
+  font-size:13px;
 }
 
 }

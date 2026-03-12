@@ -1,8 +1,13 @@
 .Blog-main-div{
-margin:80px auto;
-padding:60px 20px;
+
 width:100%;
-max-width:1440px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 75px;
+
 height:auto;
 }
 
@@ -10,7 +15,8 @@ height:auto;
 
 .blog-heading{
 text-align:start;
-margin-bottom:40px;
+
+padding-left: 30px;
 font-family:Sora;
 font-weight:400;
 font-size:20px;
@@ -23,7 +29,7 @@ color:rgba(0,6,61,1);
 .blog-scroll{
 display:grid;
 grid-template-columns:repeat(4,1fr); /* 4 cards in one row */
-gap:75px;
+gap:50px;
 width:100%;
 justify-items:center;
 }
@@ -38,6 +44,7 @@ background:#fff;
 box-shadow:0 4px 5px rgba(0,0,0,0.25);
 border-radius:8px;
 overflow:hidden;
+gap: 60px;
 }
 
 /* IMAGE */
@@ -109,8 +116,12 @@ margin:auto;
 @media (max-width:1024px){
 
 .blog-scroll{
-grid-template-columns:repeat(2,1fr);
-gap:40px;
+grid-template-columns:repeat(3,1fr);
+gap:50px;
+padding-left: 30px;
+padding-right: 30px;
+/* padding-left: 20px;
+padding-right: 30px; */
 }
 
 }
@@ -120,7 +131,7 @@ gap:40px;
 @media (max-width:600px){
 
 .blog-scroll{
-grid-template-columns:1fr;
+grid-template-columns:repeat(1,1fr);
 gap:25px;
 }
 
@@ -132,4 +143,22 @@ font-size:18px;
 font-size:14px;
 }
 
+}
+@media (max-width:420px){
+
+.blog-scroll{
+grid-template-columns:1fr;
+}
+
+.blog-img img{
+height:150px;
+}
+
+
+
+.blog-card{
+
+    
+  
+}
 }

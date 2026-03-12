@@ -14,7 +14,7 @@ const Hero_Services = () => {
           </h1>
 
           <div className="hero_Paragraph">
-            <p>
+            <p className="text-2xl">
               Microsoft Dynamics 365 Finance & Operations is a powerful enterprise
               resource planning solution designed to unify financial management,
               supply chain, manufacturing, and operations. It enables organizations
