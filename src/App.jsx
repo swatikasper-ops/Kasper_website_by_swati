@@ -1,7 +1,7 @@
 import React from 'react'
-import Services_popup from './pages/Services_popup/Services_popup';
+// import Services_popup from './pages/Services_popup/Services_popup';
 import Inside_Blogs from './pages/Insight_Blogs/Inside_Blogs';
-import Main_Services from './pages/Services/Main_Services';
+// import Main_Services from './pages/Services/Main_Services';
 import { Routes,Route } from 'react-router-dom';
 
 // import Main_Solutions from './pages/Solutions/Main_Solution';
@@ -32,10 +32,10 @@ const App = () => {
     {/* <section id="contact">
   <Contact />
 </section>  */}
-{/* 
-    <Main_Services/> */}
-
-    <Inside_Blogs/>
+ 
+     {/* <Main_Services/>  */}
+     
+     <Inside_Blogs/>
   
     {/* <Services_popup/> */}
 

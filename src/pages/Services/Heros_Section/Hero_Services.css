@@ -72,6 +72,24 @@
   margin-top: 18px;
 }
 
+
+.Go_Arrow{
+cursor:pointer;
+font-size:32px;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:200px;
+animation: bounce 2s infinite;
+color: white;
+font-weight: 500;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(10px);}
+}
+
 .btn-outline{
   width: 133px;
   height: 40px;
@@ -86,9 +104,7 @@
   transition: 0.3s;
 }
 
-.btn-outline:hover{
-  background: rgb(155, 6, 6);
-}
+
 
 /* ---------- Responsive ---------- */
 
