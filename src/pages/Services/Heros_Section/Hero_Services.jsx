@@ -12,15 +12,15 @@ const Hero_Services = () => {
   };
 
   return (
-    <section className="hero">
-      <div className="hero-overlay"></div>
+    <section className="heroos">
+      <div className="herooos-overlay"></div>
 
-      <div className="hero-inner">
-        <div className="hero-heading">
+      <div className="herooos-inner">
+        <div className="hero00s-heading">
 
           <h1>MICROSOFT D365 FINANCE & OPERATIONS</h1>
 
-          <div className="hero_Paragraph">
+          <div className="herooos_Paragraph">
             <p className="text-2xl">
               Microsoft Dynamics 365 Finance & Operations is a powerful
               enterprise resource planning solution designed to unify financial
@@ -30,12 +30,12 @@ const Hero_Services = () => {
             </p>
           </div>
 
-          <div className="hero-actions">
+          <div className="heroooss-actions">
             <button className="btn-outline">Get A Quote</button>
           </div>
 
           {/* Arrow */}
-          <div className="Go_Arrow" onClick={scrollDown}>
+          <div className="Go_Arrowww" onClick={scrollDown}>
             <GoArrowDown />
           </div>
 
